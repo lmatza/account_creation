@@ -16,7 +16,7 @@ enter_pw = input('Enter your password: ')
 confirm_pw = input('Enter your password again: ')
 
 if enter_pw == confirm_pw:
-    print('Your passwords match.')
+    print('\n Your passwords match.')
 else:
     print('Your paswords do not match.')
 
@@ -24,7 +24,7 @@ if enter_pw != confirm_pw:
     print('The program will now close. \n')
     sys.exit(0)
 
-print(enter_name + '\n' + enter_email + '\n' + enter_pw + '\n')
+print('\n {} \n {} \n {} \n'.format(enter_name, enter_email, enter_pw))
 
 account_confirm = input('Is this correct? [y/n]')
 
